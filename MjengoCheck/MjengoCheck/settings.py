@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['5f21-41-206-42-66.ngrok-free.app', 'localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'users.apps.UsersConfig',
     'mjengocheck.apps.MjengocheckConfig',
     'django.contrib.admin',
     'django.contrib.auth',

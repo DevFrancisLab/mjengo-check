@@ -3,9 +3,13 @@ from django.shortcuts import render
 # Create your views here.
 # Web Pages
 from django.http import HttpResponse
+from .models import Site
 
 def home(request):
-    return render(request,'mjengocheck/home.html',{'title':'Home'})
+    context = {
+        'sites': Site.objects.all()
+    }
+    return render(request,'mjengocheck/home.html',context)
 
 def about(request):
     return render(request,'mjengocheck/about.html',{'title':'About'})
