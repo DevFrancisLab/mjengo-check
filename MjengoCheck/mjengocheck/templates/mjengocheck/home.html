@@ -1,6 +1,5 @@
 {% extends "mjengocheck/base.html" %}
 {% block content %}
-    <a href="{% url 'mjengocheck-about' %}">About</a>
     <h1>Welcome To Mjengo Check Home Page</h1>
     {% for site in sites %}
         <a href="#">{{ site.name }}</a>
